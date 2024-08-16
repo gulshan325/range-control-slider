@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Pricing Template</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Three Flex Rounded Corner Boxes -->
+        <div class="flex-boxes">
+            <!-- First Box -->
+            <div class="box">
+                <h2>Automatic Shares</h2>
+                <div class="slider-container">
+                    <label for="rangeSlider1">Automatic Shares: <span id="shares1">0</span></label>
+                    <input type="range" id="rangeSlider1" min="0" max="100" value="0" oninput="updateValues(1)">
+                </div>
+                <!-- Two Flex Boxes -->
+                <div class="discount">
+                    <div class="discount-box">
+                        <p><span id="discount1">0%</span> discount</p>
+                    </div>
+                    <div class="price-box">
+                        $<span id="actualPrice1">0</span>
+                        <del>$<span id="comparePrice1">0</span></del>
+                    </div>
+                </div>
+
+                <!-- Three Flex Boxes -->
+                <div class="save-boxes">
+                    <div class="save-boxes-inner">
+                        <div class="save yellow-box">Save 30%</div>
+                        <div class="gap">
+                            <div class="price-details">
+                                <h2>30</h2>
+                                <h2>Posts</h2>
+                            </div>
+                            <div class="price-details">
+                                <p>$<span id="limitedPrice1">0</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="save-boxes-inner">
+                        <div class="save yellow-box">Save 30%</div>
+                        <div class="gap">
+                            <div class="price-details">
+                                <h2>30</h2>
+                                <h2>Posts</h2>
+                            </div>
+                            <div class="price-details">
+                                <p>$<span id="limitedPrice1_2">0</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="save-boxes-inner">
+                        <div class="save yellow-box">Save 30%</div>
+                        <div class="gap">
+                            <div class="price-details">
+                                <h2>30</h2>
+                                <h2>Posts</h2>
+                            </div>
+                            <div class="price-details">
+                                <p>$<span id="limitedPrice1_3">0</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Box -->
+            <div class="box">
+                <h2>Automatic Likes</h2>
+                <div class="slider-container">
+                    <label for="rangeSlider2">Automatic Likes: <span id="shares2">0</span></label>
+                    <input type="range" id="rangeSlider2" min="0" max="100" value="0" oninput="updateValues(2)">
+                </div>
+                <!-- Two Flex Boxes -->
+                <div class="discount">
+                    <div class="discount-box">
+                        <p><span id="discount2">0%</span> discount</p>
+                    </div>
+                    <div class="price-box">
+                        $<span id="actualPrice2">0</span>
+                        <del>$<span id="comparePrice2">0</span></del>
+                    </div>
+                </div>
+
+                <!-- Three Flex Boxes -->
+                <div class="save-boxes">
+                    <div class="save-boxes-inner">
+                        <div class="save yellow-box">Save 30%</div>
+                        <div class="gap">
+                            <div class="price-details">
+                                <h2>30</h2>
+                                <h2>Posts</h2>
+                            </div>
+                            <div class="price-details">
+                                <p>$<span id="limitedPrice2">0</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="save-boxes-inner">
+                        <div class="save yellow-box">Save 30%</div>
+                        <div class="gap">
+                            <div class="price-details">
+                                <h2>30</h2>
+                                <h2>Posts</h2>
+                            </div>
+                            <div class="price-details">
+                                <p>$<span id="limitedPrice2_2">0</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="save-boxes-inner">
+                        <div class="save yellow-box">Save 30%</div>
+                        <div class="gap">
+                            <div class="price-details">
+                                <h2>30</h2>
+                                <h2>Posts</h2>
+                            </div>
+                            <div class="price-details">
+                                <p>$<span id="limitedPrice2_3">0</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third Box -->
+            <div class="box">
+                <h2>Automatic Comments</h2>
+                <div class="slider-container">
+                    <label for="rangeSlider3">Automatic Comments: <span id="shares3">0</span></label>
+                    <input type="range" id="rangeSlider3" min="0" max="100" value="0" oninput="updateValues(3)">
+                </div>
+                <!-- Two Flex Boxes -->
+                <div class="discount">
+                    <div class="discount-box">
+                        <p><span id="discount3">0%</span> discount</p>
+                    </div>
+                    <div class="price-box">
+                        $<span id="actualPrice3">0</span>
+                        <del>$<span id="comparePrice3">0</span></del>
+                    </div>
+                </div>
+
+                <!-- Three Flex Boxes -->
+                <div class="save-boxes">
+                    <div class="save-boxes-inner">
+                        <div class="save yellow-box">Save 30%</div>
+                        <div class="gap">
+                            <div class="price-details">
+                                <h2>30</h2>
+                                <h2>Posts</h2>
+                            </div>
+                            <div class="price-details">
+                                <p>$<span id="limitedPrice3">0</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="save-boxes-inner">
+                        <div class="save yellow-box">Save 30%</div>
+                        <div class="gap">
+                            <div class="price-details">
+                                <h2>30</h2>
+                                <h2>Posts</h2>
+                            </div>
+                            <div class="price-details">
+                                <p>$<span id="limitedPrice3_2">0</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="save-boxes-inner">
+                        <div class="save yellow-box">Save 30%</div>
+                        <div class="gap">
+                            <div class="price-details">
+                                <h2>30</h2>
+                                <h2>Posts</h2>
+                            </div>
+                            <div class="price-details">
+                                <p>$<span id="limitedPrice3_3">0</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
